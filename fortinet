@@ -260,7 +260,7 @@
         "network_NIC_fg22_Id": "[resourceId('Microsoft.Network/networkInterfaces',variables('network_NIC_fg22_Name'))]",
         "publicIPID": "[resourceID(parameters('publicIPAddressResourceGroup'),'Microsoft.Network/publicIPAddresses',parameters('publicIPAddressName'))]",
         "publicIP2ID": "[resourceID(parameters('publicIPAddress2ResourceGroup'),'Microsoft.Network/publicIPAddresses',parameters('publicIPAddress2Name'))]",
-        "NSGName": "[concat(parameters('FortiGateNamePrefix'),'-',uniqueString(resourceGroup().id),'-NSG')]",
+        "NSGName": "[concat(parameters('FortiGateNamePrefix'),'-NSG')]",
         "sn1IPArray": "[split(parameters('Subnet1Prefix'),'.')]",
         "sn1IPArray2ndString": "[string(variables('sn1IPArray')[3])]",
         "sn1IPArray2nd": "[split(variables('sn1IPArray2ndString'),'/')]",
